@@ -1,0 +1,22 @@
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:29:41:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+    ros::ServiceClient set_mode_client = nh.serviceClient<mavros_msgs::SetMode>
+[01;32m[K                                         ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:29:78:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+    ros::ServiceClient set_mode_client = nh.serviceClient<mavros_msgs::SetMode>
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:35:4:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandBool[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+    mavros_msgs::CommandBool arm_cmd;
+[01;32m[K    ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:36:4:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_cmd[m[K’ was not declared in this scope
+    arm_cmd.request.value = true;
+[01;32m[K    ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state[m[K’ was not declared in this scope
+   if (!current_state.armed) {
+[01;32m[K        ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:41:8:[m[K [01;31m[Kerror: [m[K‘[01m[Karming_client[m[K’ was not declared in this scope
+    if( arming_client.call(arm_cmd) &&
+[01;32m[K        ^[m[K
+make[2]: *** [CMakeFiles/set_vel.dir/src/set_Vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/set_vel.dir/all] Error 2
+make: *** [all] Error 2

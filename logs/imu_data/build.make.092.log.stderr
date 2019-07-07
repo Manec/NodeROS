@@ -1,0 +1,11 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:20:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+ void chatterCallback(const sensor_msgs::Imu::ConstPtr& msg){
+[01;32m[K                            ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:20:44:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+ void chatterCallback(const sensor_msgs::Imu::ConstPtr& msg){
+[01;32m[K                                            ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:20:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:20:44:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

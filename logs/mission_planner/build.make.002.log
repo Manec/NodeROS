@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target mission_planner[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mission_planner.dir/src/mission_planner.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/esaii-admin/catkin_ws/devel/.private/mission_planner/lib/mission_planner/mission_planner[0m
+[100%] Built target mission_planner

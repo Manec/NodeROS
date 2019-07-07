@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/devel/.private/set_vel
+
+Name: set_vel
+Description: Description of set_vel
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/esaii-admin/catkin_ws/devel/.private/set_vel/lib 
+Requires: 

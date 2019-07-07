@@ -1,0 +1,9 @@
+[31m[1mCMake Error[0m at /home/esaii-admin/catkin_ws/src/omronsentech_camera/CMakeLists.txt:187 (message):
+
+
+  Please install SentechSDK (can be downloaded from www.sentech.co.jp), load
+  the SDK environment settings
+
+   (e.g. $ source /opt/sentech/.stprofile) and try again.
+
+

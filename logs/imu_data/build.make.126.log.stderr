@@ -1,0 +1,43 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:23:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ was not declared in this scope
+     ros::Publisher vis_pub = n.advertise<visualization_msgs::Marker>( "visualization_marker", 1 );
+[01;32m[K                                          ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:23:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+     ros::Publisher vis_pub = n.advertise<visualization_msgs::Marker>( "visualization_marker", 1 );
+[01;32m[K                                ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:23:97:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise(const char [21], int)[m[K’
+     ros::Publisher vis_pub = n.advertise<visualization_msgs::Marker>( "visualization_marker", 1 );
+[01;32m[K                                                                                                 ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher advertise(const std::string& topic, uint32_t queue_size, bool latch = false)
+[01;32m[K               ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:23:97:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     ros::Publisher vis_pub = n.advertise<visualization_msgs::Marker>( "visualization_marker", 1 );
+[01;32m[K                                                                                                 ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher advertise(const std::string& topic, uint32_t queue_size,
+[01;32m[K             ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:23:97:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     ros::Publisher vis_pub = n.advertise<visualization_msgs::Marker>( "visualization_marker", 1 );
+[01;32m[K                                                                                                 ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ is not a class or namespace
+   visualization_msgs::Marker marker;
+[01;32m[K   ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker[m[K’ was not declared in this scope
+   marker.header.frame_id = "base_link";
+[01;32m[K   ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:33:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ is not a class or namespace
+   marker.type = visualization_msgs::Marker::SPHERE;
+[01;32m[K                 ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:34:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ is not a class or namespace
+   marker.action = visualization_msgs::Marker::ADD;
+[01;32m[K                   ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

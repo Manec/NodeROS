@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/devel/.private/gazebo2rviz
+
+Name: gazebo2rviz
+Description: Description of gazebo2rviz
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/esaii-admin/catkin_ws/devel/.private/gazebo2rviz/lib 
+Requires: rospy pysdf

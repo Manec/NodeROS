@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target imu_data[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_data.dir/src/imu_data.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/esaii-admin/catkin_ws/devel/.private/imu_data/lib/imu_data/imu_data[0m
+[100%] Built target imu_data

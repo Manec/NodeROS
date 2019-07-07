@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/esaii-admin/catkin_ws/devel/.private/local_planner/setup.sh

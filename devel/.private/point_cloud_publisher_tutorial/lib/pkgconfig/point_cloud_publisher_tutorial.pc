@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/devel/.private/point_cloud_publisher_tutorial
+
+Name: point_cloud_publisher_tutorial
+Description: Description of point_cloud_publisher_tutorial
+Version: 0.2.3
+Cflags: 
+Libs: -L/home/esaii-admin/catkin_ws/devel/.private/point_cloud_publisher_tutorial/lib 
+Requires: 

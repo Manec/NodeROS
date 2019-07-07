@@ -1,0 +1,7 @@
+[  8%] Built target servo_state_publisher
+[ 17%] Built target copter_visualization
+[35m[1mScanning dependencies of target mavros_extras[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/odom.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/vision_speed_estimate.cpp.o[0m
+[ 30%] [32m[1mLinking CXX shared library /home/esaii-admin/catkin_ws/devel/.private/mavros_extras/lib/libmavros_extras.so[0m
+[100%] Built target mavros_extras

@@ -1,0 +1,27 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~box_radius_" : \b [double] Data points farther away will be discarded min: 0.0, default: 12.0, max: 20.0
+- \b "~goal_cost_param_" : \b [double] Cost function weight for goal oriented behavior min: 0.0, default: 10.0, max: 20.0
+- \b "~heading_cost_param_" : \b [double] Cost function weight for constant heading min: 0.0, default: 0.5, max: 20.0
+- \b "~smooth_cost_param_" : \b [double] Cost function weight for path smoothness min: 0.5, default: 1.5, max: 20.0
+- \b "~goal_z_param" : \b [double] Height of the goal position min: -20.0, default: 3.5, max: 20.0
+- \b "~no_progress_slope_" : \b [double] If progress derivative higher than this value the drone rises min: -1.0, default: -0.0007, max: 1.0
+- \b "~min_realsense_dist_" : \b [double] Discard points closer than that min: 0.0, default: 0.2, max: 10.0
+- \b "~timeout_startup_" : \b [double] After this timeout the companion status is MAV_STATE_CRITICAL min: 0.0, default: 5.0, max: 60.0
+- \b "~timeout_critical_" : \b [double] After this timeout the companion status is MAV_STATE_CRITICAL min: 0.0, default: 0.5, max: 10.0
+- \b "~timeout_termination_" : \b [double] After this timeout the companion status is MAV_STATE_FLIGHT_TERMINATION min: 0.0, default: 15.0, max: 1000.0
+- \b "~max_point_age_s_" : \b [double] maximum age of a remembered data point min: 0.0, default: 20.0, max: 500.0
+- \b "~min_num_points_per_cell_" : \b [int] minimum number of points in one area to be kept, if lower they are discarded as noise min: 1, default: 1, max: 500
+- \b "~smoothing_speed_xy_" : \b [double] response speed of the smoothing system in xy (set to 0 to disable) min: 0.0, default: 10.0, max: 30.0
+- \b "~smoothing_speed_z_" : \b [double] response speed of the smoothing system in z (set to 0 to disable) min: 0.0, default: 3.0, max: 30.0
+- \b "~smoothing_margin_degrees_" : \b [double] smoothing radius for obstacle cost in cost histogram min: 0.0, default: 40.0, max: 90.0
+- \b "~use_vel_setpoints_" : \b [bool] Enable velocity setpoints (if false, position setpoints are used) min: False, default: False, max: True
+- \b "~adapt_cost_params_" : \b [bool] If no progress towards goal is made, allow rising min: False, default: True, max: True
+- \b "~children_per_node_" : \b [int] Branching factor of the search tree min: 0, default: 50, max: 100
+- \b "~n_expanded_nodes_" : \b [int] Number of nodes expanded in complete tree min: 0, default: 10, max: 200
+- \b "~tree_node_distance_" : \b [double] Distance between nodes min: 0.0, default: 1.0, max: 20.0
+- \b "~tree_discount_factor_" : \b [double] Discount factor in tree cost function min: 0.0, default: 0.8, max: 1.0
+- \b "~max_path_length_" : \b [double] Maximum length of planned paths min: 0.0, default: 3.0, max: 15.0
+

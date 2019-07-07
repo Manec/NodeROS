@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/install
+
+Name: omronsentech_camera
+Description: Description of omronsentech_camera
+Version: 0.1.1
+Cflags: -I/home/esaii-admin/catkin_ws/install/include
+Libs: -L/home/esaii-admin/catkin_ws/install/lib -lomronsentech_camera -lstcamera_node -lstcamera_nodelet
+Requires: nodelet camera_info_manager image_transport roscpp roslaunch roslint rospy sensor_msgs std_msgs

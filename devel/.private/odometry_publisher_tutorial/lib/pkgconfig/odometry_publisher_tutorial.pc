@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/devel/.private/odometry_publisher_tutorial
+
+Name: odometry_publisher_tutorial
+Description: Description of odometry_publisher_tutorial
+Version: 0.2.3
+Cflags: 
+Libs: -L/home/esaii-admin/catkin_ws/devel/.private/odometry_publisher_tutorial/lib 
+Requires: 

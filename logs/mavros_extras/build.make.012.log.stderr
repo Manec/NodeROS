@@ -1,0 +1,12 @@
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:[m[K In member function ‘[01m[Kvoid mavros::extra_plugins::OdometryPlugin::handle_odom(const mavlink_message_t*, mavlink::common::msg::ODOMETRY&)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:235:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mavlink::common::msg::ODOMETRY[m[K’ has no member named ‘[01m[Ktwist_covariance[m[K’
+   ftf::mavlink_urt_to_covariance_matrix(odom_msg.twist_covariance, cov_vel);
+[01;32m[K                                                  ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:[m[K In member function ‘[01m[Kvoid mavros::extra_plugins::OdometryPlugin::odom_cb(const ConstPtr&)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:411:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mavlink::common::msg::ODOMETRY[m[K’ has no member named ‘[01m[Ktwist_covariance[m[K’
+   ftf::covariance_urt_to_mavlink(cov_vel_map, msg.twist_covariance);
+[01;32m[K                                                   ^[m[K
+make[2]: *** [CMakeFiles/mavros_extras.dir/src/plugins/odom.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/mavros_extras.dir/all] Error 2
+make: *** [all] Error 2

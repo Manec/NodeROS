@@ -1,0 +1,4 @@
+Symlinking /home/esaii-admin/catkin_ws/devel/share/mission_planner/cmake/mission_plannerConfig.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/share/mission_planner/cmake/mission_plannerConfig-version.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/mission_planner/mission_planner
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/pkgconfig/mission_planner.pc

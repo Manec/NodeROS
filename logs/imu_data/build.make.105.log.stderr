@@ -1,0 +1,34 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:72:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+     ros::ServiceClient wp_clear_client = p.serviceClient<mavros_msgs::WaypointClear>
+[01;32m[K                                          ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:72:84:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+     ros::ServiceClient wp_clear_client = p.serviceClient<mavros_msgs::WaypointClear>
+[01;32m[K                                                                                    ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:74:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope
+  ros::ServiceClient wp_srv_client = n.serviceClient<mavros_msgs::WaypointPush>
+[01;32m[K                                     ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:74:78:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  ros::ServiceClient wp_srv_client = n.serviceClient<mavros_msgs::WaypointPush>
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:92:130:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K:[m[K’ token
+    cout << "Desea añadir puntos de forma manual? Pulse 1 si es asi. Pulse otro numero para ejecutar la mision existente" << endl:
+[01;32m[K                                                                                                                                  ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:96:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knumber[m[K’ was not declared in this scope
+    cin >> number; 
+[01;32m[K           ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:109:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K:[m[K’ token
+    cout << "Numero de waypoints que desea poner" << endl:
+[01;32m[K                                                         ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:113:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knum_waypoints[m[K’ was not declared in this scope
+    cin >> num_waypoints;
+[01;32m[K           ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:131:43:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+      cout << "Añada X Coordenada" << endl:
+[01;32m[K                                           ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:131:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ is not a class or namespace
+      cout << "Añada X Coordenada" << endl:
+[01;32m[K                                       ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

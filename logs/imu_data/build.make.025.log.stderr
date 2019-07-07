@@ -1,0 +1,7 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+     else
+[01;32m[K     ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

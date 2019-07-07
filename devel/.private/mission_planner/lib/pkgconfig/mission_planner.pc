@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/devel/.private/mission_planner
+
+Name: mission_planner
+Description: Description of mission_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/esaii-admin/catkin_ws/devel/.private/mission_planner/lib 
+Requires: 

@@ -1,0 +1,8 @@
+CMake Error: Error in cmake code at
+/home/esaii-admin/catkin_ws/src/using_markers/CMakeLists.txt:125:
+Parse error.  Expected a command name, got right paren with text ")".
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/esaii-admin/catkin_ws/build/using_markers/CMakeFiles/CMakeOutput.log".
+See also "/home/esaii-admin/catkin_ws/build/using_markers/CMakeFiles/CMakeError.log".
+Makefile:726: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1

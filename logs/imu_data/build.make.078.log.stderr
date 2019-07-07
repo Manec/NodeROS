@@ -1,0 +1,17 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:217:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope
+       pose.pose.position.z += 1;
+[01;32m[K       ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:243:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope
+     local_pos_pub.publish(pose);
+[01;32m[K                           ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:247:7:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+     } break;
+[01;32m[K       ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K At global scope:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:249:2:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  }
+[01;32m[K  ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

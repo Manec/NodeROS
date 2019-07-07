@@ -1,0 +1,167 @@
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:[m[K In function ‘[01m[Kvoid gps_vel_cb(const PoseStamped&)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:19:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _pose_type {aka const struct geometry_msgs::Pose_<std::allocator<void> >}[m[K’ has no member named ‘[01m[KPoint[m[K’
+    ROS_INFO("local_Altitude: [%f]", msg.pose.Point.x);
+[01;32m[K                                              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:346:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+[01;32m[K                                                                                                                                                                     ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:379:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+[01;32m[K       ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:561:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+[01;32m[K                                   ^[m[K
+[01m[K/opt/ros/kinetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+[01;32m[K                       ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:19:4:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+    ROS_INFO("local_Altitude: [%f]", msg.pose.Point.x);
+[01;32m[K    ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe(const char [36], int, <unresolved overloaded function type>)[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M)[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M)[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M) const[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M) const[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M)[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M)[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M) const[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M) const[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, 
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (*)(const PoseStamped&) {aka void (*)(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kvoid (*)(const TwistStamped&) {aka void (*)(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[KM[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<const M>[m[K’ and ‘[01m[Kconst PoseStamped {aka const geometry_msgs::PoseStamped_<std::allocator<void> >}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<const M>[m[K’ and ‘[01m[Kconst TwistStamped {aka const geometry_msgs::TwistStamped_<std::allocator<void> >}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(const boost::shared_ptr<const M>&)>[m[K’ and ‘[01m[Kvoid(const PoseStamped&) {aka void(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(const boost::shared_ptr<const M>&)>[m[K’ and ‘[01m[Kvoid(const TwistStamped&) {aka void(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber subscribe(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid(const PoseStamped&) {aka void(const geometry_msgs::PoseStamped_<std::allocator<void> >&)}[m[K’
+    gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                              ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid(const TwistStamped&) {aka void(const geometry_msgs::TwistStamped_<std::allocator<void> >&)}[m[K’
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:40:78:[m[K [01;36m[Knote: [m[K  could not resolve address from overloaded function ‘[01m[Kgps_vel_cb[m[K’
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:836:14:[m[K [01;36m[Knote: [m[Kcandidate: ros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)
+   Subscriber subscribe(SubscribeOptions& ops);
+[01;32m[K              ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/node_handle.h:836:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:42:58:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_pos[m[K’ was not declared in this scope
+    local = n.subscribe("/mavros/local_position/pose", 1, local_pos);
+[01;32m[K                                                          ^[m[K
+make[2]: *** [CMakeFiles/set_vel.dir/src/set_Vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/set_vel.dir/all] Error 2
+make: *** [all] Error 2

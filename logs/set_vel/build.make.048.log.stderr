@@ -1,0 +1,13 @@
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_vel[m[K’ was not declared in this scope
+     gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K     ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:36:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_vel_cb[m[K’ was not declared in this scope
+     gps_vel = n.subscribe("/mavros/global_position/raw/gps_vel", 1, gps_vel_cb);
+[01;32m[K                                                                     ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal[m[K’ was not declared in this scope
+     local = n.subscribe("/mavros/local_position/pose", 1, local_pos);
+[01;32m[K     ^[m[K
+make[2]: *** [CMakeFiles/set_vel.dir/src/set_Vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/set_vel.dir/all] Error 2
+make: *** [all] Error 2

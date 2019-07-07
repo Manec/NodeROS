@@ -1,0 +1,4 @@
+Symlinking /home/esaii-admin/catkin_ws/devel/share/gazebo2rviz/cmake/gazebo2rvizConfig.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/share/gazebo2rviz/cmake/gazebo2rvizConfig-version.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/pkgconfig/gazebo2rviz.pc
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/python2.7/dist-packages/gazebo2rviz/__init__.py

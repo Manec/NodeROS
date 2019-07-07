@@ -1,0 +1,10 @@
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:87:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_time[m[K’ was not declared in this scope
+       double dt = (current_time - last_time).toSec();
+[01;32m[K                    ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:87:35:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_time[m[K’ was not declared in this scope
+       double dt = (current_time - last_time).toSec();
+[01;32m[K                                   ^[m[K
+make[2]: *** [CMakeFiles/set_vel.dir/src/set_Vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/set_vel.dir/all] Error 2
+make: *** [all] Error 2

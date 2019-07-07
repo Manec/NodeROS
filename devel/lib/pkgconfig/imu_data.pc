@@ -1,0 +1,1 @@
+/home/esaii-admin/catkin_ws/devel/.private/imu_data/lib/pkgconfig/imu_data.pc

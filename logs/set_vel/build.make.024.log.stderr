@@ -1,0 +1,7 @@
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:[m[K In function ‘[01m[Kvoid local_pos(const PoseStamped&)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/set_vel/src/set_Vel.cpp:20:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kbas[m[K’ was not declared in this scope
+    if(msg.pose.position.z > 2.0) bas = true;
+[01;32m[K                                  ^[m[K
+make[2]: *** [CMakeFiles/set_vel.dir/src/set_Vel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/set_vel.dir/all] Error 2
+make: *** [all] Error 2

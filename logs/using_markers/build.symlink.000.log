@@ -1,0 +1,4 @@
+Symlinking /home/esaii-admin/catkin_ws/devel/share/using_markers/cmake/using_markersConfig.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/share/using_markers/cmake/using_markersConfig-version.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/using_markers/basic_shapes
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/pkgconfig/using_markers.pc

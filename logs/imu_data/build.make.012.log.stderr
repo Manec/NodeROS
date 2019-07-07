@@ -1,0 +1,16 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:83:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kis[m[K’ was not declared in this scope
+    for(int mn = 0;mn < number;++is) {
+[01;32m[K                                 ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:86:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kas[m[K’ was not declared in this scope
+    cin >> as[mn].frame; // mavros_msgs::Waypoint::FRAME_GLOBAL;
+[01;32m[K           ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:103:28:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+    wp_clear_srv.request = {};
+[01;32m[K                            ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:103:25:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+    wp_clear_srv.request = {};
+[01;32m[K                         ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

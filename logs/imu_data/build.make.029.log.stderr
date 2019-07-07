@@ -1,0 +1,10 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:62:44:[m[K [01;31m[Kerror: [m[K‘[01m[Klist_cb[m[K’ was not declared in this scope
+           ("mavros/mission/waypoints", 10, list_cb);      
+[01;32m[K                                            ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:119:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavros_msgs::WaypointReached {aka struct mavros_msgs::WaypointReached_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kwp_sec[m[K’
+     while(current_reach.wp_sec != 1) cout << "que pasara que misterios habra" << endl;    
+[01;32m[K                         ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

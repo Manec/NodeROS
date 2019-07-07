@@ -1,0 +1,1 @@
+/home/esaii-admin/catkin_ws/devel/.private/gazebo2rviz/lib/pkgconfig/gazebo2rviz.pc

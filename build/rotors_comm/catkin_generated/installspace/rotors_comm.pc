@@ -1,0 +1,8 @@
+prefix=/home/esaii-admin/catkin_ws/install
+
+Name: rotors_comm
+Description: Description of rotors_comm
+Version: 2.2.3
+Cflags: -I/home/esaii-admin/catkin_ws/install/include
+Libs: -L/home/esaii-admin/catkin_ws/install/lib 
+Requires: message_runtime

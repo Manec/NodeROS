@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target imu_data[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_data.dir/src/imu_data.cpp.o[0m
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:74:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krate[m[K’ was not declared in this scope
+         rate.sleep();
+[01;32m[K         ^[m[K
+CMakeFiles/imu_data.dir/build.make:62: recipe for target 'CMakeFiles/imu_data.dir/src/imu_data.cpp.o' failed
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/imu_data.dir/all' failed
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

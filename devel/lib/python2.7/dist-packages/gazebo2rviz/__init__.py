@@ -1,0 +1,1 @@
+/home/esaii-admin/catkin_ws/devel/.private/gazebo2rviz/lib/python2.7/dist-packages/gazebo2rviz/__init__.py

@@ -1,0 +1,1 @@
+/home/esaii-admin/catkin_ws/devel/.private/roomba_stage/lib/pkgconfig/roomba_stage.pc

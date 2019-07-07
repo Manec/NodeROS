@@ -1,0 +1,4 @@
+Symlinking /home/esaii-admin/catkin_ws/devel/share/pysdf/cmake/pysdfConfig.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/share/pysdf/cmake/pysdfConfig-version.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/pkgconfig/pysdf.pc
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/python2.7/dist-packages/pysdf/__init__.py

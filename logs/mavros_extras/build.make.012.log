@@ -1,0 +1,37 @@
+[  4%] [32m[1mLinking CXX executable /home/esaii-admin/catkin_ws/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher[0m
+[  8%] [32m[1mLinking CXX executable /home/esaii-admin/catkin_ws/devel/.private/mavros_extras/lib/mavros_extras/copter_visualization[0m
+[35m[1mScanning dependencies of target mavros_extras[0m
+[ 13%] Built target servo_state_publisher
+[ 17%] Built target copter_visualization
+[ 21%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/companion_process_status.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/adsb.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/cam_imu_sync.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/debug_value.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/distance_sensor.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/fake_gps.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/gps_rtk.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/log_transfer.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/mocap_pose_estimate.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/obstacle_distance.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/odom.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/px4flow.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/rangefinder.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/trajectory.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/wheel_odometry.cpp.o[0m
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:[m[K In member function ‘[01m[Kvoid mavros::extra_plugins::OdometryPlugin::handle_odom(const mavlink_message_t*, mavlink::common::msg::ODOMETRY&)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:235:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mavlink::common::msg::ODOMETRY[m[K’ has no member named ‘[01m[Ktwist_covariance[m[K’
+   ftf::mavlink_urt_to_covariance_matrix(odom_msg.twist_covariance, cov_vel);
+[01;32m[K                                                  ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:[m[K In member function ‘[01m[Kvoid mavros::extra_plugins::OdometryPlugin::odom_cb(const ConstPtr&)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/mavros/mavros_extras/src/plugins/odom.cpp:411:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mavlink::common::msg::ODOMETRY[m[K’ has no member named ‘[01m[Ktwist_covariance[m[K’
+   ftf::covariance_urt_to_mavlink(cov_vel_map, msg.twist_covariance);
+[01;32m[K                                                   ^[m[K
+[ 86%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/vibration.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/vision_pose_estimate.cpp.o[0m
+CMakeFiles/mavros_extras.dir/build.make:302: recipe for target 'CMakeFiles/mavros_extras.dir/src/plugins/odom.cpp.o' failed
+make[2]: *** [CMakeFiles/mavros_extras.dir/src/plugins/odom.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/mavros_extras.dir/all' failed
+make[1]: *** [CMakeFiles/mavros_extras.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:138: recipe for target 'all' failed

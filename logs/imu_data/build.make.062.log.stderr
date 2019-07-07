@@ -1,0 +1,16 @@
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:140:9:[m[K [01;31m[Kerror: [m[Kjump to case label [-fpermissive]
+    case 2:
+[01;32m[K         ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:119:31:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kmavros_msgs::CommandBool arm_cmd[m[K’
+      mavros_msgs::CommandBool arm_cmd;
+[01;32m[K                               ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:116:27:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kmavros_msgs::SetMode offb_set_mode[m[K’
+      mavros_msgs::SetMode offb_set_mode;
+[01;32m[K                           ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/imu_data/src/imu_data.cpp:148:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+ }
+[01;32m[K ^[m[K
+make[2]: *** [CMakeFiles/imu_data.dir/src/imu_data.cpp.o] Error 1
+make[1]: *** [CMakeFiles/imu_data.dir/all] Error 2
+make: *** [all] Error 2

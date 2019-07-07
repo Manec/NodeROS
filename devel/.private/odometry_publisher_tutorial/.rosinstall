@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/esaii-admin/catkin_ws/devel/.private/odometry_publisher_tutorial/setup.sh

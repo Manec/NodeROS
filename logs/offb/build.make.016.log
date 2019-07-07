@@ -1,0 +1,23 @@
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target offb[0m
+[35m[1mScanning dependencies of target offb_main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/offb.dir/src/offb_main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/offb_main.dir/src/offb_main.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/esaii-admin/catkin_ws/devel/.private/offb/lib/offb/offb_main[0m
+[100%] [32m[1mLinking CXX shared library /home/esaii-admin/catkin_ws/devel/.private/offb/lib/liboffb.so[0m
+[100%] Built target offb
+[100%] Built target offb_main

@@ -1,0 +1,38 @@
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target offb[0m
+[35m[1mScanning dependencies of target offb_main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/offb_main.dir/src/offb_main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/offb.dir/src/offb_main.cpp.o[0m
+[01m[K/home/esaii-admin/catkin_ws/src/offb/src/offb_main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/offb/src/offb_main.cpp:106:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavros_msgs::SetMode::Response {aka struct mavros_msgs::SetModeResponse_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ksuccess[m[K’
+                     offb_set_mode.response.success) {
+[01;32m[K                                            ^[m[K
+[01m[K/home/esaii-admin/catkin_ws/src/offb/src/offb_main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/esaii-admin/catkin_ws/src/offb/src/offb_main.cpp:106:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavros_msgs::SetMode::Response {aka struct mavros_msgs::SetModeResponse_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ksuccess[m[K’
+                     offb_set_mode.response.success) {
+[01;32m[K                                            ^[m[K
+CMakeFiles/offb_main.dir/build.make:62: recipe for target 'CMakeFiles/offb_main.dir/src/offb_main.cpp.o' failed
+make[2]: *** [CMakeFiles/offb_main.dir/src/offb_main.cpp.o] Error 1
+CMakeFiles/Makefile2:241: recipe for target 'CMakeFiles/offb_main.dir/all' failed
+make[1]: *** [CMakeFiles/offb_main.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+CMakeFiles/offb.dir/build.make:62: recipe for target 'CMakeFiles/offb.dir/src/offb_main.cpp.o' failed
+make[2]: *** [CMakeFiles/offb.dir/src/offb_main.cpp.o] Error 1
+CMakeFiles/Makefile2:324: recipe for target 'CMakeFiles/offb.dir/all' failed
+make[1]: *** [CMakeFiles/offb.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

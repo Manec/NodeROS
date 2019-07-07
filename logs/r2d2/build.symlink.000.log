@@ -1,0 +1,4 @@
+Symlinking /home/esaii-admin/catkin_ws/devel/share/r2d2/cmake/r2d2Config.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/share/r2d2/cmake/r2d2Config-version.cmake
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/r2d2/state_publisher
+Symlinking /home/esaii-admin/catkin_ws/devel/lib/pkgconfig/r2d2.pc
